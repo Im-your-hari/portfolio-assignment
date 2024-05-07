@@ -218,6 +218,14 @@ fieldset{
     padding: 10px 1px 10px 1px;
 }
 
+.honors h3{
+    text-shadow: 2px 2px 1px #090444;
+}
+
+.honors fieldset{
+    border-radius: 10%;
+}
+
 
 @media screen and (max-width:440px) {
     .view-navigation{
