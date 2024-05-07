@@ -115,9 +115,6 @@ ul,li{
 
 
 
-
-
-
 .right-panel{
     background-color: rgb(138, 173, 222);
     height: 150vh;
@@ -135,6 +132,28 @@ ul,li{
 
 .right-panel hr{
     width: 99%;
+}
+
+.education{
+    
+    color: aliceblue;
+}
+.education h3{
+    text-shadow: 0px 2px #090444;
+}
+
+
+
+.education li{
+    padding-top: 5px;
+}
+
+.projects{
+
+}
+
+.projects h2{
+    text-shadow: 0px 2px #090444;
 }
 
 
@@ -172,4 +191,5 @@ ul,li{
     .right-panel hr{
         width: 95%;
     }
+    
 }
