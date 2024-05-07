@@ -106,7 +106,9 @@ body{
 }
 a:hover{
     font-size: 20px;
+    text-decoration: underline;
 }
+
 
 ul,li{
     justify-content: left;

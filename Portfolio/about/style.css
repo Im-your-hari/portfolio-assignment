@@ -59,6 +59,8 @@ body{
 }
 
 .star{
+    padding-top: 10%;
     color:aliceblue;
     font-size: 30px;
+    width: 100%;
 }

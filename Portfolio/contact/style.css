@@ -21,6 +21,9 @@ body{
 
 
 .routing-page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     padding: 10px;
     align-content: center;
     align-items: center;
@@ -64,18 +67,20 @@ body{
 }
 
 .contact-form{
+    
     padding-top: 50px;
     padding-bottom: 20px;
 
 }
 
 .contact-form form{
+    
 }
 
 .contact-form input,textarea{
     width: 60%;
     height: 25px;
-    
+    padding: 2px;
     border-radius: 10px;
 }
 .button-submit{
@@ -88,4 +93,16 @@ body{
     display: inline-block;
     padding: 10px;
     font-weight: bold;
+}
+.button-submit:hover{
+    text-decoration: none;
+    background-color: rgb(138, 173, 222);
+    color: rgb(9, 4, 68);
+}
+
+.star{
+    padding-top: 10%;
+    color:rgb(138, 173, 222);
+    font-size: 30px;
+    width: 100%;
 }
