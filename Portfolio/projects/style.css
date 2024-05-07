@@ -156,7 +156,10 @@ ul,li{
     text-shadow: 0px 2px #090444;
 }
 
-
+fieldset{
+    border-color: #090444;
+    box-shadow: 0px 2px 2px white;
+}
 
 
 @media screen and (max-width:440px) {
