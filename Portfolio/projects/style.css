@@ -193,6 +193,31 @@ fieldset{
 
 }
 
+.certifications{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+
+.certifications th{
+    font-weight: bold;
+    font-size: 100%;
+    text-shadow: 2px 2px 1px #090444;
+    padding: 10px 1px 10px 1px;
+    
+}
+.certifications table{
+    border-color: #090444;
+    text-align: center;
+
+}
+
+.certifications td{
+    padding: 10px 1px 10px 1px;
+}
+
 
 @media screen and (max-width:440px) {
     .view-navigation{
