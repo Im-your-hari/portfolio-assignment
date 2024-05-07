@@ -161,6 +161,38 @@ fieldset{
     box-shadow: 0px 2px 2px white;
 }
 
+.all-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.skills-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    text-shadow: 2px 2px 1px #090444;
+
+}
+
+.skills-icon b{
+    font-size: 20px;
+    align-items: center;
+}
+
+.skills-icon:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    color:#090444;
+    text-shadow: 2px 2px 1px #fff;
+
+}
+
 
 @media screen and (max-width:440px) {
     .view-navigation{
