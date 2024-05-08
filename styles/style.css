@@ -28,7 +28,15 @@ body{
 .profile-image{
     padding-top: 40px;
     border-radius: 50%;
-    
+    animation: animateProfile 3s linear;
+}
+@keyframes animateProfile{
+    0%{
+        padding-top: 0px;
+    }
+    100%{
+        padding-top: 40px;
+    }
 }
 
 .name{
@@ -37,6 +45,16 @@ body{
     font-size: 50px;
     text-shadow: 3px 3px rgb(138, 173, 222);
     transform: rotate(-5deg);
+    animation: animateName 3s linear;
+}
+@keyframes animateName{
+    0%{
+        transform: rotate(0deg);
+        font-size: 30px;
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
 }
 .name h1{
     align-items: center;
