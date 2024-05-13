@@ -8,34 +8,61 @@
     <meta name="theme-color" content='rgb(9, 4, 68)' />
 </head>
 
+<style>
+    /* .about-content{
+        overflow: hidden; 
+        border-right: .15em solid rgb(138, 173, 222); 
+        border-left: .15em solid rgb(138, 173, 222); 
+        
+        
+        animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { 
+            width: 100%;
+            
+         }
+    } 
+    */
+    
+</style>
+
+
 <body>
+    <div class="preloader">
+        <img src="../projects/rb-crow.gif" alt="" srcset="">
+    </div>
 
     <main><center>
-        <article class="main-article">
-            <h1 class="name">
-                ABOUT ME
-            </h1>
-            <p class="sub-heading">
+        <section class="" style="">
+            <article class="main-article">
+                <h1 class="name">
+                    ABOUT ME
+                </h1>
+                <p class="sub-heading">
+                    
+                </p>
+            </article>
+           
+            <hr color="#8aadde">
+    
+            <article class="routing-page">
+    
+                <a href="../index.html">
+                    <button type="button">HOME</button>
+                </a>
+                <a href="../projects/index.html">
+                    <button type="button">VIEW</button>
+                </a>
+                <a href="../contact/index.html">
+                    <button type="button">CONTACT</button>
+                </a>
                 
-            </p>
-        </article>
-       
-        <hr color="#8aadde">
-
-        <article class="routing-page">
-
-            <a href="../index.html">
-                <button type="button">HOME</button>
-            </a>
-            <a href="../projects/index.html">
-                <button type="button">VIEW</button>
-            </a>
-            <a href="../contact/index.html">
-                <button type="button">CONTACT</button>
-            </a>
-            
-
-        </article>
+    
+            </article>
+        </section>
+        
 
         <article class="about-content">
             <p>
@@ -60,6 +87,24 @@
         </article>
 
     </main>
+
+    
+
+
     
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const preloader = document.querySelector('.preloader');
+  const content = document.querySelector('.content');
+
+  
+  setTimeout(function() {
+    preloader.style.display = 'none';
+    content.classList.add('show');
+  }, 5000); 
+});
+
+</script>
+
 </html>

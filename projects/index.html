@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-eS6+vX1CamoZbAYgjToewmopOB6tPFUnrE8+0sVxkL6XoFZ0jE+0IkR3p9EuNUH3" crossorigin="anonymous">
-
+    
 </head>
 
 <body>
+    <div class="preloader">
+        <img src="../projects/rb-crow.gif" alt="" srcset="">
+    </div>
+
     <main>
 
     <table class="main-table">
@@ -46,6 +50,13 @@
         
                 </article>
 
+                <!-- <article class="name-logo">
+                    <center>
+                        <img class="" src="name-logo.jpg" alt="" srcset="" width="100%" height="100%">
+                    </center>
+                </article> -->
+
+                
                 <article class="view-navigation">   
                     <ul>
                         <li>
@@ -78,10 +89,27 @@
                                 <h3>Honors</h3>
                             </a>
                         </li>
+                        <!-- <li>
+                            <a href="#gallery">
+                                <h3>Gallary</h3>
+                            </a>
+                        </li> -->
                     </ul>
                     
                 </article>
 
+                <!-- <article>
+                    <div class="container">
+                        <div class="ring" id="ring">
+                          <img src="https://assets-global.website-files.com/61b74db330d7740923e4176b/62253b6269db67b2b515b301_Explore%20More.svg" alt="Ring Image">
+                        </div>
+                      </div>
+                </article> -->
+                <article>
+                    <div class="hr-load" id="hr-load">
+                        <hr color="#8aadde">
+                    </div>
+                </article>
 
 
                 <article class="social-icons">  
@@ -107,6 +135,15 @@
                     </div>
                                  
                 </article>
+                <article>
+                    <div class="hr-load" id="hr-load2">
+                        <hr color="#8aadde">
+                    </div>
+                </article>
+                
+
+                
+
             </td>
 
             <!--Right Panel-->
@@ -115,14 +152,18 @@
 
                     
 
-                    <h1 id="education">Education</h1>
+                    <h1 id="education fade-in">Education</h1>
                     <hr color="#090444">
                     
-                            <article>
+                            <article class="">
                                 <!--fieldset style="padding-top: 0%;padding-bottom: 0%;padding-right: 0%;"-->
-                                    <h3>College of Engineering and Management</h3>
+                                    <h3>
+                                        College of Engineering and Management
+                                        
+                                    </h3>
                                 <!--/fieldset-->
-                                <div style="padding-left: 5%;">
+                                <div style="padding-left: 5%;" id="">
+                                    <img src="college.jpg" alt="" srcset="">
                                     <h4>Bachelor of Technology - BTech, Computer Science and Engineering</h4>
                                     <p>2019 - 2023</p>
                                     <p>CGPA : 8.06</p>
@@ -133,6 +174,7 @@
                             <article>
                                 <h3>Deepthi HSS Thalore</h3>
                                 <div style="padding-left: 5%;">
+                                    <img src="deepthi.jfif" alt="" srcset="">
                                     <h4>Higher Secondary Education-XII, Computer Science</h4>
                                     <p>Jun 2017 - Mar 2019</p>
                                     <p>Grade : 82%</p>
@@ -143,6 +185,7 @@
                             <article>
                                 <h3>St.Xavier's HS Chevoor Thrissur</h3>
                                 <div style="padding-left: 5%;">
+                                    <img src="chevoor1.jpg" alt="" srcset="">
                                     <h4>SSLC X</h4>
                                     <p>Mar 2017</p>
                                     <p>Grade : 96%</p>
@@ -160,7 +203,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam pariatur consectetur culpa quis adipisci, dolor nobis sit amet saepe dolorum neque beatae quod reiciendis, nesciunt et dignissimos necessitatibus unde?
                 
                 </article-->
-                <article class="projects">
+                <article class="projects fade-in">
                     <h1 id="experience">Experience & Projects</h1>
                     <hr color="#090444">
                     
@@ -170,21 +213,30 @@
                             <legend><h3>Mental Wellness Bot</h3></legend>
                             <sub>Feb 2024-Mar 2024 <sup>.</sup> 2 mos</sub>
                             <p>Mental Wellness Bot is an interface software system to ask psychological questions to analyze the sentiment condition of a person/patient. This software predict whether the person is feeling mental illness or not, by analyzing their vocal responses</p>
+                            <a href="https://github.com/Im-your-hari/MWB">
+                                <i class="fab fa-github dark-icon" aria-hidden="true"></i>
+                            </a>
                         </fieldset>
                         <br>
 
                         <fieldset>
                             <legend><h3>Crowd Detection and Counting System</h3></legend>
                             <sub>Feb 2024-Mar 2024 <sup>.</sup> 2 mos</sub>
-                                <p>This system count people and detect a particular region/area is crowded or not. This system will alert when a selected region is crowded(more people density than expected). This system is developed with the help of YOLOv8 computer vision model.</p>
+                            <p>This system count people and detect a particular region/area is crowded or not. This system will alert when a selected region is crowded(more people density than expected). This system is developed with the help of YOLOv8 computer vision model.</p>
+                            <a href="https://github.com/Im-your-hari/CrowdDetection">
+                                <i class="fab fa-github dark-icon" aria-hidden="true"></i>
+                            </a>
                         </fieldset>
                         <br>
                         <fieldset>
                             <legend><h3>FloodWatch-Realtime flood detection system</h3></legend>
                             <sub>Feb 2024-Mar 2024 <sup>.</sup> 2 mos</sub>
-                                <p>
-                                    This is a real-time Flood Detection and alerting system developed in YOLOv8.
-                                </p>    
+                            <p>
+                                This is a real-time Flood Detection and alerting system developed in YOLOv8.
+                            </p>
+                            <a href="https://github.com/Im-your-hari/WaterSegmentation">
+                                <i class="fab fa-github dark-icon" aria-hidden="true"></i>
+                            </a>
                         </fieldset>
                         <br>
 
@@ -200,6 +252,9 @@
                                     College project on topic Phishing Detection using Machine Learning to prevent cyber attacks. Also
 presented as a research paper in ITCES conference.
                                 </p>
+                                <a href="https://github.com/Im-your-hari/WhalingGuard-PhishingDetectionML">
+                                    <i class="fab fa-github dark-icon" aria-hidden="true"></i>
+                                </a>
                             </fieldset>
                             <br>
 
@@ -209,6 +264,9 @@ presented as a research paper in ITCES conference.
                                 <p>
                                     Me and my three colleagues developed a dynamic website that ensured page views and user experience for our own college.
                                 </p>
+                                <a href="https://cempunnapra.org/">
+                                    <i class="fas fa-globe dark-icon"></i>
+                                </a>
                             </fieldset>
                             <br>
 
@@ -218,6 +276,10 @@ presented as a research paper in ITCES conference.
                                 <p>
                                     College mini project of school bus surveillance to ensure safety of students to and from school.
                                 </p>
+                                <a href="https://github.com/Im-your-hari/LivBus">
+                                    <i class="fab fa-github dark-icon" aria-hidden="true"></i>
+                                </a>
+
                             </fieldset>
                                
                             
@@ -237,12 +299,13 @@ presented as a research paper in ITCES conference.
 
 
                 </article>
-                <article>
+                <article class="fade-in">
                     <h1 id="skills">Skills</h1>
                     <hr color="#090444">
                     
                     <div class="all-skills">
                         <div class="skills-icon">
+                            
                             <i class="fab fa-html5 " aria-hidden="true"></i><b>Html5</b>
                         </div>
                         <div class="skills-icon">
@@ -308,8 +371,6 @@ presented as a research paper in ITCES conference.
                 <article class="honors">
                     <h1 id="honors">Honors</h1>
                     <hr color="#090444">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque rerum debitis similique assumenda sequi eum voluptates sapiente inventore commodi cumque, laudantium adipisci in veritatis consequatur ipsa, quibusdam eveniet. Suscipit, iure!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam pariatur consectetur culpa quis adipisci, dolor nobis sit amet saepe dolorum neque beatae quod reiciendis, nesciunt et dignissimos necessitatibus unde?
                     
                     <article>
                         
@@ -317,6 +378,7 @@ presented as a research paper in ITCES conference.
                             <legend><h3>*ITCES Corporation</h3></legend>
                             <h4>Presented research paper on ITCES Corporation</h4>
                             <sub> June 2023</sub>
+                            
                             <p>
                                 Presented paper entitled "WhalingGuard : Phishing detection using Machine Learning" in the International Conference on Intelligent Technologies in Computer and Engineering Science (ITCES 2023).
                             </p>
@@ -356,5 +418,47 @@ presented as a research paper in ITCES conference.
 
 
     </main>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollHr1 = document.getElementById('hr-load');
+            const scrollHr2 = document.getElementById('hr-load2');
+            const scrollPosition = window.scrollY;
+
+            
+            const newWidth = Math.min(scrollPosition * 0.02, 100); 
+            scrollHr1.style.width = newWidth + '%';
+            scrollHr2.style.width = newWidth + '%';
+           
+        });
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const preloader = document.querySelector('.preloader');
+            const content = document.querySelector('.content');
+
+            
+            setTimeout(function() {
+                preloader.style.display = 'none';
+                content.classList.add('show');
+            }, 5000); 
+        });
+
+        
+
+
+        
+
+    </script>
 </body>
 </html>

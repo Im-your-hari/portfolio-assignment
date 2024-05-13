@@ -118,14 +118,17 @@ ul,li{
 
 
 .right-panel{
-    background-color: rgb(138, 173, 222);
+    /* background-color: rgb(138, 173, 222); */
+    background-color: #fff;
     height: 150vh;
     width: 70%;
     
     position: relative;
-    color: aliceblue;
+    color: #090444;
     padding-left: 75px;
+    
 }
+
 
 .right-panel h1{
     color: #090444;
@@ -138,10 +141,10 @@ ul,li{
 
 .education{
     
-    color: aliceblue;
+    color: #090444;
 }
 .education h3{
-    text-shadow: 0px 2px #090444;
+    /* text-shadow: 0px 2px #090444; */
 }
 
 
@@ -155,7 +158,7 @@ ul,li{
 }
 
 .projects h2{
-    text-shadow: 0px 2px #090444;
+    /* text-shadow: 0px 2px #090444; */
 }
 
 fieldset{
@@ -175,7 +178,8 @@ fieldset{
     align-items: center;
     justify-content: space-around;
     font-size: 40px;
-    text-shadow: 2px 2px 1px #090444;
+    color :rgb(138, 173, 222);
+    /* text-shadow: 2px 2px 1px #090444; */
 
 }
 
@@ -191,7 +195,7 @@ fieldset{
     justify-content: space-around;
     font-size: 40px;
     color:#090444;
-    text-shadow: 2px 2px 1px #fff;
+    text-shadow: 2px 2px 1px rgb(138, 173, 222);
 
 }
 
@@ -206,7 +210,7 @@ fieldset{
 .certifications th{
     font-weight: bold;
     font-size: 100%;
-    text-shadow: 2px 2px 1px #090444;
+    /* text-shadow: 2px 2px 1px #090444; */
     padding: 10px 1px 10px 1px;
     
 }
@@ -221,19 +225,102 @@ fieldset{
 }
 
 .honors h3{
-    text-shadow: 2px 2px 1px #090444;
+    /* text-shadow: 2px 2px 1px #090444; */
 }
 
 .honors fieldset{
     border-radius: 10%;
 }
+.education img{
+    width: 60%;
+    height: 50%;
+    border-radius: 5%;
+}
 
+.dark-icon {
+    color: rgb(138, 173, 222);
+    font-size: 25px;
+    padding-right: 3px;
+    
+}
+
+.dark-icon:hover {
+    color:#000;
+    border-color: rgb(138, 173, 222);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.hr-load{
+    width: 0px;
+    color:rgb(138, 173, 222);
+    transition: width 0.3s;
+}
+
+.name-logo{
+    align-items: center;
+    justify-content: center;
+    
+}
+.name-logo img{
+    border-radius: 100%;
+    
+}
+
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(138, 173, 222);
+   
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.preloader img{
+    height: 150px;
+    width: 150px;
+
+}
+
+
+
+
+
+.content {
+    display: none; 
+}
+
+.content.show {
+    display: block; 
+}
 
 @media screen and (max-width:440px) {
     .view-navigation{
         font-size:12px;
         padding:0px;
         
+    }
+
+    .preloader img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .education img{
+        width: 60%;
+        height: 50%;
+        border-radius: 20%;
     }
     
     .left-panel{

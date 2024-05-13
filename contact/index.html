@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <img src="../projects/rb-crow.gif" alt="" srcset="">
+    </div>
 
     <main><center>
         <article class="main-article">
@@ -53,6 +56,17 @@
             </form>
         </article>
 
+
+        <article>
+            <iframe class ="map-class" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d422.34458760361946!2d76.20392901912737!3d10.487533962358794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1715516538362!5m2!1sen!2sin" 
+            width="750" 
+            height="300" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </article>
+
+
         <article class="social-icons">  
             <div class="">
                 <a href="https://wa.me/918157096325/?text=Hi Hari...!">
@@ -86,4 +100,17 @@
     </main>
     
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const preloader = document.querySelector('.preloader');
+  const content = document.querySelector('.content');
+
+  
+  setTimeout(function() {
+    preloader.style.display = 'none';
+    content.classList.add('show');
+  }, 5000); 
+});
+
+</script>
 </html>

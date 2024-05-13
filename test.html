@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrolling Fade-in Effect</title>
+
+</head>
+
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 2000px; /* Height for demonstration purposes */
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+</style>
+
+<body>
+
+<div class="container">
+  <div class="fade-in">Content 1</div>
+  <div class="fade-in">Content 2</div>
+  <div class="fade-in">Content 3</div>
+  <div class="fade-in">Content 4</div>
+  <div class="fade-in">Content 5</div>
+</div>
+
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('.fade-in');
+  
+  function checkVisibility() {
+    elements.forEach(function(element) {
+      const elementPosition = element.getBoundingClientRect();
+      if (elementPosition.top < window.innerHeight - 50) {
+        element.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('resize', checkVisibility);
+
+  // Check initial visibility
+  checkVisibility();
+});
+
+</script>
+</html>
